@@ -1,0 +1,16 @@
+{
+  "name": "muizz-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Viet-Hoang PHAN",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "discord.js": "^11.5.1",
+    "mongoose": "^5.7.3"
+  }
+}
