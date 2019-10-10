@@ -35,7 +35,7 @@ app.post("/api/music", (req, res, next) => {
 })
 
 app.get("/api/music", (req, res, next) => {
-    Music.find().then(documents => {
+    Music.aggregate([ { $sample: { size: 1 } } ]).then(documents => {
         console.log(documents)
         res.status(200).json({
             message: "OK",
