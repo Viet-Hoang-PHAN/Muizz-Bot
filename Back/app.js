@@ -8,10 +8,9 @@ const Music = require("./models/Music")
 
 mongoose.connect(`mongodb+srv://${username}:${password}@muizz-bot-jchyj.mongodb.net/Muizz-bot`)
     .then(() => {
-        console.log('Database connected')
-        console.log("Salut")
-
-    })
+        console.log('Database connected');
+        console.log("Salut");
+    });
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
